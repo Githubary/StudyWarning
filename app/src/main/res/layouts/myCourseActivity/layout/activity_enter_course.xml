@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/my_create_course_toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/white"
+          app:popupTheme="@style/ToolbarPopupTheme">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="加入课程"
+                android:textColor="@color/dialog_black"
+                android:textSize="22sp" />
+
+      </androidx.appcompat.widget.Toolbar>
+
+      <EditText
+          android:id="@+id/searchCourse"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:padding="10dp"
+          android:singleLine="true"
+          android:hint="输入课程号"
+          android:textSize="20dp"
+          android:cursorVisible="false"
+          android:drawableRight="@drawable/search"
+          android:background="@color/white" />
+      <ListView
+          android:id="@+id/list_viewCourse"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="20dp"
+          android:scrollbars="none" />
+      <!--<TextView-->
+          <!--android:id="@+id/enterCourse"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:layout_margin="20dp"-->
+          <!--android:padding="10dp"-->
+          <!--android:text="确定加入"-->
+          <!--android:gravity="center"-->
+          <!--android:textStyle="bold"-->
+          <!--android:textColor="@color/white"-->
+          <!--android:background="@color/blue"/>-->
+
+</LinearLayout>

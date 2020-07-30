@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_grey">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/student_warning_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="预警情况"
+            android:textColor="@color/dialog_black"
+            android:textSize="20dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/tubiao"
+            android:layout_below="@+id/student_warning_toolbar"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bingzhuangtu" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/xiangqing"
+        android:layout_below="@+id/tubiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="须知"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_danger_small"
+            android:text="低于50分"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_attention_small"
+            android:text="50-69分"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_safe_small"
+            android:text="70-85分"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_champion_small"
+            android:text=">86分"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/xiangqing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi"/>
+
+                <TextView
+                    android:id="@+id/danger1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_danger"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/danger1"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点危险了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/danger1"
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:text="详情"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout2"
+                android:layout_below="@+id/warning_relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi"/>
+
+                <TextView
+                    android:id="@+id/danger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_danger"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/danger"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点危险了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/danger"
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:padding="5dp"
+                    android:text="详情"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout3"
+                android:layout_below="@+id/warning_relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi"/>
+
+                <TextView
+                    android:id="@+id/danger2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_danger"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/danger2"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点危险了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/danger2"
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:text="详情"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout4"
+                android:layout_below="@+id/warning_relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi"/>
+
+                <TextView
+                    android:id="@+id/danger3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_danger"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/danger3"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点危险了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/danger3"
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:text="详情"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout5"
+                android:layout_below="@+id/warning_relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi_yellow"/>
+
+                <TextView
+                    android:id="@+id/attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_attention"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/attention"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点需要注意了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/attention"
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:text="详情"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout6"
+                android:layout_below="@+id/warning_relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi_yellow"/>
+
+                <TextView
+                    android:id="@+id/attention2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_attention"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/attention2"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点需要注意了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/attention2"
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="详情"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout7"
+                android:layout_below="@+id/warning_relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi_yellow"/>
+
+                <TextView
+                    android:id="@+id/attention3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_attention"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/attention3"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="某知识点需要注意了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/attention3"
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="详情"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout8"
+                android:layout_below="@+id/warning_relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi_green"/>
+
+                <TextView
+                    android:id="@+id/safe1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_safe"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/safe1"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="该门课程安全了"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/safe1"
+                    android:id="@+id/line7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="详情"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/warning_relativeLayout9"
+                android:layout_below="@+id/warning_relativeLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/relativelayout_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_dingzi_green"/>
+
+                <TextView
+                    android:layout_above="@+id/safe2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_champion"/>
+
+                <TextView
+                    android:id="@+id/safe2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_safe"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/safe2"
+                    android:paddingLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="该知识点已经学得很好啦"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_below="@+id/safe2"
+                    android:id="@+id/line8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_below="@+id/line8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="详情"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_rightjiantou_small"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/warning_relativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

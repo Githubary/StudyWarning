@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bg_grey"
+    android:layout_height="match_parent">
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <ListView
+        android:id="@+id/list_courseItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="15dp"
+        android:divider="@color/bg_grey"
+        android:scrollbars="none"
+        android:layout_margin="20dp"/>
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/bg_grey">-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/course1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/teacherCourse_relativeLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/teacher_course_background">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/teacherCourse"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:src="@drawable/ic_teacher_course_img"-->
+                <!--android:background="@drawable/imageview_background"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/teachercourse_title1"-->
+                <!--android:layout_toRightOf="@+id/teacherCourse"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="实用操作系统"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_below="@+id/teachercourse_title1"-->
+                <!--android:layout_toRightOf="@+id/teacherCourse"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="移动一班"-->
+                <!--android:textSize="15dp"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/deleteTeacherCourse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:drawableLeft="@drawable/ic_deleteclass"-->
+                <!--android:textSize="20dp"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:text="NO.05214"-->
+                <!--android:textSize="15dp"-->
+                <!--android:textColor="@color/white"/>-->
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_below="@+id/teacherCourse_relativeLayout"-->
+            <!--android:id="@+id/teacherCourse_relativeLayout2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/teacher_course_background">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/teacherCourse2"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:src="@drawable/ic_teacher_course_img"-->
+                <!--android:background="@drawable/imageview_background"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/teachercourse_title2"-->
+                <!--android:layout_toRightOf="@+id/teacherCourse2"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="实用操作系统"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_below="@+id/teachercourse_title2"-->
+                <!--android:layout_toRightOf="@+id/teacherCourse2"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="移动三班"-->
+                <!--android:textSize="15dp"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/deleteTeacherCourse2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:drawableLeft="@drawable/ic_deleteclass"-->
+                <!--android:textSize="20dp"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:text="NO.04217"-->
+                <!--android:textSize="15dp"-->
+                <!--android:textColor="@color/white"/>-->
+        <!--</RelativeLayout>-->
+
+
+
+    <!--</RelativeLayout>-->
+<!--</ScrollView>-->
+
+</LinearLayout>

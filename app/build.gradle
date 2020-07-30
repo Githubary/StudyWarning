@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    sourceSets {
+//        main {
+//            jni.srcDirs = []
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/loginactivity',
+                            'src/main/res/layouts/checkInWaysFragment',
+                            'src/main/res/layouts/NavigationLayout',
+                            'src/main/res/layouts/originalFragment',
+                            'src/main/res/layouts/refreshfunction',
+                            'src/main/res/layouts/myCourseActivity',
+                            'src/main/res/layouts/classfunction',
+                            'src/main/res/layouts/mainleaderActivity',
+                            'src/main/res/layouts/myMessageFunctionActivity',
+                            'src/main/res/layouts/studentClassViewPager',
+                            'src/main/res/layouts/teacherClassViewPager',
+                            'src/main/res/layouts/teacherClassFunction',
+                            'src/main/res/layouts/studentClassFunction',
+                            'src/main/res/layouts/warningActivity',
+                            'src/main/res/layouts/warningReason',
+                            'src/main/res/layouts/QuestionAndHomework',
+                            'src/main/res/layouts/utilsLayout',
+                            'src/main/res/layouts/generalRevision',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13-beta-3'
+    androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
+    implementation 'com.github.HanHuoBin:BaseDialog:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.alibaba:fastjson:1.2.60'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.1'
+    implementation 'com.google.dagger:dagger:2.24'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'junit:junit:4.12'
+    implementation 'com.google.zxing:core:3.4.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'org.xutils:xutils:3.5.0'
+    implementation 'com.androidkun:XTabLayout:1.1.4'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'org.projectlombok:lombok:1.18.8'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation files('libs/libandroid_tensorflow_inference_java.jar')
+
+}

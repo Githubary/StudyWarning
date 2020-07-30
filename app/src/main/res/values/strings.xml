@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">警学</string>
+    <string name="title_activity_login">loginActivity</string>
+    <string name="title_activity_lose_net">LoseNetActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">更多功能</string>
+
+    <string name="menu_home">签到</string>
+    <string name="menu_gallery">待办事项</string>
+    <string name="menu_slideshow">我的课程表</string>
+    <string name="menu_tools">心愿单</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_send">传送</string>
+
+
+    <string name="qq_header_reset">下拉可以刷新</string>
+    <string name="qq_header_pull">下拉可以刷新</string>
+    <string name="qq_header_pull_over">释放立即刷新</string>
+    <string name="qq_header_refreshing">正在刷新...不要急哦</string>
+    <string name="qq_header_completed">刷新成功啦</string>
+
+</resources>

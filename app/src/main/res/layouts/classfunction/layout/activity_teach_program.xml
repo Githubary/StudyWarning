@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.view.classfunction.teachProgramActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myCourse_toolbar"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/bg_grey"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="教学计划"
+        app:titleTextColor="@color/dialog_black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:src="@drawable/calendar" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当天教学计划介绍---"
+        android:textColor="@color/blue"
+        android:textSize="20dp"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="20dp"
+      android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="名称：原理图设计快速入门"
+            android:textSize="24dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="学时：4课时"
+          android:textSize="20dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="占比：期末占比20%"
+          android:textSize="20dp"/>
+  </LinearLayout>
+
+
+</LinearLayout>

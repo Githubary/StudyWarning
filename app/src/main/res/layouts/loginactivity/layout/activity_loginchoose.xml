@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".mvp.view.loginAndregister.loginchooseActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_addimg"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/img_teacher"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/teacher" />
+
+        <ImageView
+            android:id="@+id/img_student"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/student" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_above="@+id/choose_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="——左滑右滑选择登录身份——"
+        android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/choose_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="——请选择登录方式——"
+            android:textSize="30dp"/>
+
+</RelativeLayout>

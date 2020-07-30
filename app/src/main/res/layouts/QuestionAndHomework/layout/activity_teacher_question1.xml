@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.QuetionAndHomework.teacherQuestionActivity1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/teacher_question_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="上课提问问题"
+            android:textColor="#1296db"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teacher_question_toolbar"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="1.画出下列各信号的波形"
+                    android:textSize="20dp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img1"
+                android:layout_below="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/question4"
+                />
+            <ImageView
+                android:id="@+id/answer1"
+                android:layout_below="@+id/question_img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer4"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/answer1"
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="2.写出图1-3所示各波形的表达式"
+                    android:textSize="20dp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img2"
+                android:layout_below="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/question2"
+                />
+            <ImageView
+                android:id="@+id/answer2"
+                android:layout_below="@+id/question_img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer2"
+                />
+            <RelativeLayout
+                android:layout_below="@+id/answer2"
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="3.判别下列各序列是否为周期性的"
+                    android:textSize="20dp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img3"
+                android:layout_below="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/question3"
+                />
+
+            <ImageView
+                android:id="@+id/answer_img3"
+                android:layout_below="@+id/question_img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer3"
+                />
+
+
+            <TextView
+                android:layout_below="@+id/question_img3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>

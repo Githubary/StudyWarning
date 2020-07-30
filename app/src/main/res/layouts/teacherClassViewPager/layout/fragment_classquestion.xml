@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:id="@+id/firstline"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="20dp"
+               android:orientation="horizontal"
+               android:gravity="center">
+            <RelativeLayout
+                android:id="@+id/classQuestion1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/checkin_background">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:text="原理图设计"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:id="@+id/checkIn_State"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="78dp"
+                    android:layout_height="20dp"
+                    android:text="进行中"
+                    android:background="@drawable/checkin_state_background"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="10:00"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classQuestion2"
+                android:layout_toRightOf="@+id/classQuestion1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/checkin_background">
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:text="层次原理图"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="78dp"
+                    android:layout_height="20dp"
+                    android:text="已结束"
+                    android:background="@drawable/checkin_state2_background"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="答题人数：59人"
+                    android:textSize="15dp"/>
+
+
+
+            </RelativeLayout>
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:layout_below="@+id/firstline"
+                android:gravity="left">
+                <RelativeLayout
+                    android:id="@+id/classQuestion3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:background="@drawable/checkin_background">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentTop="true"
+                        android:text="印刷电路板的设计"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_background"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:layout_width="78dp"
+                        android:layout_height="20dp"
+                        android:text="已结束"
+                        android:background="@drawable/checkin_state2_background"/>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="40dp"
+                        android:layout_width="35dp"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_background"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="答题人数：58人"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1">
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

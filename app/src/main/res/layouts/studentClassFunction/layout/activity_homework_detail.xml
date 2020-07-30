@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.studentClassFunction.HomeworkDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homework_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="作业详情"
+            android:textColor="@color/dialog_black"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/homework_title"
+        android:layout_below="@+id/homework_detail_toolbar"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_background"
+        android:text="作业文件"
+        android:textSize="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/homework_doc"
+        android:layout_below="@id/homework_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="#1296db"
+        android:layout_height="120dp">
+
+        <TextView
+            android:gravity="center"
+            android:text="第一次课后作业.doc"
+            android:textColor="#1296db"
+            android:textStyle="italic"
+            android:drawableLeft="@drawable/ic_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/homework_doc"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_pencil"
+            android:text="写答案"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_xiangji"
+            android:text="拍答案"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_lianjie"
+            android:text="传答案"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

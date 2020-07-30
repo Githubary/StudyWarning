@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_grey">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_wallet_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        >
+        <TextView
+            android:id="@+id/my_wallet_tilet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的余额"
+            android:textColor="@color/dialog_black"
+            android:layout_gravity="center"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/cz"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chongzhi"
+        android:layout_below="@+id/my_wallet_toolbar"/>
+
+
+    <LinearLayout
+        android:id="@+id/my_wallet_Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@+id/cz"
+        >
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额："
+            android:textColor="@color/dialog_black"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/dialog_black"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_wallet_cz"
+        android:layout_below="@+id/my_wallet_Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:background="#00BCD4"
+        android:textColor="@color/dialog_white"
+        android:text="充值"
+        android:textSize="@dimen/dp_20"
+        android:gravity="center_vertical|center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/BalanceDetails"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/my_wallet_cz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="——余额明细——"
+        android:textSize="15dp"/>
+
+
+</RelativeLayout>

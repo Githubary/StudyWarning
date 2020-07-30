@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_grey">
+
+        <RelativeLayout
+            android:id="@+id/homework1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="110dp"
+            android:background="@drawable/line_background">
+
+            <TextView
+                android:id="@+id/homework_name"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="第一次作业"
+                android:textStyle="bold"
+                android:textColor="@color/dialog_black"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/line_top"
+                android:layout_below="@+id/homework_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/line_background"
+                android:layout_height="1dp"
+                />
+
+            <TextView
+                android:id="@+id/homework_state"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:text="已截止"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                android:background="@drawable/homework_state_background_red"/>
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_below="@+id/line_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="开始时间:2019-10-05 16:20"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_below="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="截止时间:2019-10-07 16:20"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/line_bottom"
+                android:layout_below="@+id/deadline"
+                android:layout_width="match_parent"
+                android:background="@drawable/line_background"
+                android:layout_height="1dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_rightjiantou"
+                android:layout_below="@+id/line_bottom"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="详情"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="110dp"
+            android:background="@drawable/line_background">
+
+            <TextView
+                android:id="@+id/homework_name2"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="第二次作业"
+                android:textStyle="bold"
+                android:textColor="@color/dialog_black"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/line_top2"
+                android:layout_below="@+id/homework_name2"
+                android:layout_width="match_parent"
+                android:background="@drawable/line_background"
+                android:layout_height="1dp"
+                />
+
+            <TextView
+                android:id="@+id/homework_state2"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:text="已截止"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/homework_state_background_red"/>
+
+            <TextView
+                android:id="@+id/startTime2"
+                android:layout_below="@+id/line_top2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="开始时间:2019-09-25 15:00"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/deadline2"
+                android:layout_below="@+id/startTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="截止时间:2019-09-26 15:00"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/line_bottom2"
+                android:layout_below="@+id/deadline2"
+                android:layout_width="match_parent"
+                android:background="@drawable/line_background"
+                android:layout_height="1dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_rightjiantou"
+                android:layout_below="@+id/line_bottom2"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="详情"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

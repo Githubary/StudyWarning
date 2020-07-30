@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/loginbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_above="@+id/register_linearlayout"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:background="@drawable/logotitle2" />
+
+        <LinearLayout
+            android:id="@+id/register_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            android:layout_marginHorizontal="40dp">
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="用户名"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:hint="密码"/>
+            <EditText
+                android:id="@+id/register_confirmPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:hint="确认密码"/>
+            <EditText
+                android:id="@+id/register_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:hint="输入手机号"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/register_verification_code"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="验证码"/>
+                <TextView
+                    android:id="@+id/getCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="获取验证码"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_btn"/>
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_teacher_btn"
+            android:layout_below="@+id/register_linearlayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="注册成为老师"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn"/>
+    <TextView
+        android:id="@+id/register_student_btn"
+        android:layout_below="@+id/register_teacher_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="注册成为学生"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"/>
+</RelativeLayout>

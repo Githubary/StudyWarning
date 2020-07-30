@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homework_grade_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="作业详情"
+            android:textColor="#1296db"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homework_grade_toolbar"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="1.电路原理图课后作业一"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/grade1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_grade"
+                    android:text="90"
+                    android:textSize="20dp"
+                    android:textColor="#FF6A6A"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img1"
+                android:layout_below="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homework1"
+                />
+            <ImageView
+                android:id="@+id/answer1"
+                android:layout_below="@+id/question_img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer5"
+                />
+            <RelativeLayout
+                android:layout_below="@+id/answer1"
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="2.电路原理图课后作业二"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/grade2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_grade"
+                    android:text="80"
+                    android:textSize="20dp"
+                    android:textColor="#FF6A6A"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img2"
+                android:layout_below="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homework2"
+                />
+            <ImageView
+                android:id="@+id/answer2"
+                android:layout_below="@+id/question_img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer6"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

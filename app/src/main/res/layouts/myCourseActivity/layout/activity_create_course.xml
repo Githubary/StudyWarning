@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mvp.view.myCourseFragmentFunction.CreateCourseActivity"
+    android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_create_course_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/ToolbarPopupTheme">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="创建课程"
+                    android:textColor="@color/dialog_black"
+                    android:textSize="22sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/create_course_name"
+            android:layout_below="@+id/my_create_course_toolbar"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dialog_white"
+            android:singleLine="true"
+            android:hint="课程名称"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/create_course_number"
+            android:layout_below="@+id/create_course_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/dialog_white"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:hint="课程号(最多五位数)"
+            android:singleLine="true"
+            android:textSize="13dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/create_course_teacher"
+            android:layout_below="@+id/create_course_number"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:background="@color/dialog_white"
+            android:maxLength="5"
+            android:hint="任课教师(不超过5个字)"
+            android:textSize="13dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_below="@+id/create_course_teacher"
+            android:id="@+id/up_course_background"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dialog_white"
+            android:drawableLeft="@drawable/ic_xiangji"
+            android:paddingLeft="10dp"
+            android:text="上传课程封面"
+            android:textSize="13dp"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/course_cover"
+            android:layout_below="@+id/up_course_background"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="40dp" />
+
+
+        <com.example.myapplication.utils.DrawableCenter.DrawableCenterTextView
+            android:id="@+id/create_by_resource"
+            android:layout_below="@+id/course_cover"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="上传该课程要用的ppt"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="13dp"
+            android:background="@color/dialog_white"
+            android:drawableLeft="@drawable/ic_coursebao"
+            android:gravity="center_vertical"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/create_by_resource"
+            >
+        <TextView
+            android:id="@+id/confirm_create_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:text="点击创建"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="20dp"
+            />
+        </RelativeLayout>
+</RelativeLayout>

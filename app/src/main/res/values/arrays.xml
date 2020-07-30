@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selector">
+        <item >单选题</item>
+        <item >多选题</item>
+        <item >简答题</item>
+    </string-array>
+
+    <declare-styleable name="NumPickView">
+        <attr name="totalNum" format="integer"/>
+        <attr name="showNum" format="integer"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+</resources>

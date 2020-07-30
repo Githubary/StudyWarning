@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mvp.view.studentClassViewPager.teachCourseManageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myCourse_toolbar"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/bg_grey"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="软件工程"
+        app:titleTextColor="@color/dialog_black"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/dialog_white"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:text="功能"-->
+        <!--android:textSize="30dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_white"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/course_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableTop="@drawable/ic_group"
+            android:text="成员"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/teachprogram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:drawableTop="@drawable/ic_teachprogram"
+            android:text="教学计划"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/workpublish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:drawableTop="@drawable/ic_workpublish"
+            android:text="作业发布"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/checkingin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:drawableTop="@drawable/ic_checkingin"
+            android:text="考勤"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_white"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/courseup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:drawableTop="@drawable/ic_courseup"
+            android:text="课程上传"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/workcorrection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableTop="@drawable/ic_workcorrection"
+            android:text="作业批改"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableTop="@drawable/ic_warning"
+            android:text="预警情况"
+            android:textColor="@color/dialog_gray"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_chapter"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="章节内容"
+        android:textSize="15dp" />
+
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrollview_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="软件的启蒙--初识软件工程" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_circle"
+                android:paddingLeft="40dp"
+                android:text="  1.1软件工程概述"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  1.2软件危机"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  1.3软件工程"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="软件的工具--建模工具" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_blue"
+                android:drawableRight="@drawable/ic_pull_down_blue"
+                android:gravity="center_vertical"
+                android:text="软件的前生--项目前期" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的理解--需求分析" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的艺术--总体设计" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的技术--详细设计与实现" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的保障--软件测试" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_blue"
+                android:drawableRight="@drawable/ic_pull_down_blue"
+                android:gravity="center_vertical"
+                android:text="软件的项目案例" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_blue"
+                android:drawableRight="@drawable/ic_pull_down_blue"
+                android:gravity="center_vertical"
+                android:text="实验内容" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="软件工程课程设计" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="历史软考题库" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="课外阅读" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

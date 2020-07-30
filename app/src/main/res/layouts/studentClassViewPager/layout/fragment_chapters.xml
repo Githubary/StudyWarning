@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.studentClassViewPager.ChaptersFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrollview_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="软件的启蒙--初识软件工程" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_circle"
+                android:paddingLeft="40dp"
+                android:text="  1.1软件工程概述"
+                />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dp"
+                        android:text="  1.2软件生命周期"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dp"
+                        android:text="  1.3软件过程模型"
+                        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="软件的工具--建模工具" />
+
+                <TextView
+                    android:id="@+id/pptlong"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:paddingLeft="40dp"
+                    android:text="  2.1常用的建模工具"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="  2.2建模工具的比较"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="  2.3软件工程方法学"
+                    />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_blue"
+                android:drawableRight="@drawable/ic_pull_down_blue"
+                android:gravity="center_vertical"
+                android:text="软件的前生--项目前期" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_circle_blue"
+                android:paddingLeft="40dp"
+                android:text="  3.1现状分析"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle_blue"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  3.2需求收集"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle_blue"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  3.3粗略设计"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle_blue"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  3.4可行性分析"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的理解--需求分析" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_circle_red"
+                android:paddingLeft="40dp"
+                android:text="  4.1需求获取"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle_red"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  4.2需求建模"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle_red"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  4.3需求文档"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle_red"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="  4.4需求验证"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的艺术--总体设计" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的技术--详细设计与实现" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_red"
+                android:drawableRight="@drawable/ic_pull_down_red"
+                android:gravity="center_vertical"
+                android:text="软件的保障--软件测试" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_blue"
+                android:drawableRight="@drawable/ic_pull_down_blue"
+                android:gravity="center_vertical"
+                android:text="软件的项目案例" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader_blue"
+                android:drawableRight="@drawable/ic_pull_down_blue"
+                android:gravity="center_vertical"
+                android:text="实验内容" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="软件工程课程设计" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="历史软考题库" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_guideheader"
+                android:drawableRight="@drawable/ic_pull_down"
+                android:gravity="center_vertical"
+                android:text="课外阅读" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

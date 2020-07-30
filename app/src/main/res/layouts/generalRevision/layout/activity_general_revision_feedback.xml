@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mvp.view.generalRevision.generalRevisionFeedbackActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/feedback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="总复习反馈统计图"
+            android:textColor="#1296db"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+<ScrollView
+    android:id="@+id/feedback_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/feedback_toolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.mikephil.charting.charts.LineChart
+
+            android:id="@+id/lineChart"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+
+         <TextView
+             android:id="@+id/ceqian"
+             android:layout_margin="20dp"
+             android:gravity="center"
+             android:layout_below="@+id/lineChart"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:background="#1296db"
+             android:text="测前通过率:74%-79%"
+             android:padding="10dp"
+             android:textSize="20dp"/>
+
+        <TextView
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/ceqian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="#FF6A6A"
+            android:text="测前通过率:81%-86%"
+            android:padding="10dp"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<resources>
+
+
+    <style name="MyCustomTabLayout" parent="@style/AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="tabIndicatorColor">#FF4081</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="toolbar_theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">#000000</item>
+
+        <item name="android:actionBarSize">46dp</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <!--<item name="android:colorBackground">#000000</item>--> <!--这里可以改变菜单的背景色-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item> <!--新增一个item，用于控制menu-->
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+
+    <style name="demoStyle">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/checkin_selector</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="dialogWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/num_picker_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/num_picker_dialog_out</item>
+    </style>
+    <style name="time_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.studentClassViewPager.ChaptersFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fileUp_folder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img1"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="安装包"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fileUp_folder2"
+                android:layout_below="@+id/fileUp_folder1"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="案例"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fileUp_folder3"
+                android:layout_below="@id/fileUp_folder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img3"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="课件"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fileUp_folder4"
+                android:layout_below="@id/fileUp_folder3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img4"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="课外阅读"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fileUp_folder5"
+                android:layout_below="@id/fileUp_folder4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img5"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="实验"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fileUp_folder6"
+                android:layout_below="@id/fileUp_folder5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img6"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="课程设计"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fileUp_folder7"
+                android:layout_below="@id/fileUp_folder6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img7"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="习题与答案"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fileUp_folder8"
+                android:layout_below="@id/fileUp_folder7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fileUp_img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fileup_folder"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/fileUp_img8"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="教材计划表"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rightjiantou"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/fileUp_folder8"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

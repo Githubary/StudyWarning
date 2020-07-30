@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.generalRevision.studentStartAnwserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/start_answer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="课后作业一"
+            android:textColor="@color/dialog_black"
+            android:textSize="22sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_below="@+id/start_answer_toolbar"
+        android:id="@+id/question_img4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homework1"
+        />
+    <LinearLayout
+        android:id="@+id/answerFunction"
+        android:layout_below="@+id/question_img4"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_pencil"
+            android:text="写答案"/>
+        <TextView
+            android:id="@+id/pai_answer"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_xiangji"
+            android:text="拍答案"/>
+        <TextView
+            android:id="@+id/up_answer"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_lianjie"
+            android:text="传答案"/>
+    </LinearLayout>
+   <ScrollView
+       android:layout_marginTop="10dp"
+       android:layout_below="@+id/answerFunction"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/white">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/your_answer"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@color/white"/>
+
+           <TextView
+               android:id="@+id/finish_answer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/your_answer"
+               android:background="#1296db"
+               android:gravity="center"
+               android:padding="10dp"
+               android:textColor="@color/white"
+               android:text="提交答案"
+               android:textSize="20dp" />
+       </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

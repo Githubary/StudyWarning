@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/checkIn_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生作业"
+        android:textColor="#1296db"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/checkIn_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/homework_student1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img1"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="张三丰"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state1"
+                    android:paddingRight="15dp"
+                    android:text="15:33"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state1"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_finish_homework"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/homework_student2"
+                android:layout_below="@+id/homework_student1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/CheckIn_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/CheckIn_img2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="孙悟空"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state2"
+                    android:paddingRight="15dp"
+                    android:text="15:25"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state2"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_finish_homework"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/homework_student3"
+                android:layout_below="@+id/homework_student2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img3"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="猪八戒"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state3"
+                    android:paddingRight="15dp"
+                    android:text="15:23"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state3"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_finish_homework"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student4"
+                android:layout_below="@+id/homework_student3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img4"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="黑旋风"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state4"
+                    android:paddingRight="15dp"
+                    android:text="15:21"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state4"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_finish_homework"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/checkIn_student5"
+                android:layout_below="@+id/checkIn_student4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img5"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="唐三藏"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state5"
+                    android:paddingRight="15dp"
+                    android:text="15:19"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state5"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_finish_homework"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/checkIn_student6"
+                android:layout_below="@+id/checkIn_student5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img6"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="张顺"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state6"
+                    android:paddingRight="15dp"
+                    android:text="15:18"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_finish_homework" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student7"
+                android:layout_below="@+id/checkIn_student6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img7"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="李白"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state7"
+                    android:paddingRight="15dp"
+                    android:text="15:18"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state7"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_finish_homework"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student8"
+                android:layout_below="@+id/checkIn_student7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img8"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="沙和尚"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state8"
+                    android:paddingRight="15dp"
+                    android:text="15:18"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_finish_homework" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student9"
+                android:layout_below="@+id/checkIn_student8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img9"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="牛魔王"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state9"
+                    android:paddingRight="15dp"
+                    android:text="15:15"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state9"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_not_finish_homework"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student10"
+                android:layout_below="@+id/checkIn_student9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img10"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="红孩儿"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state10"
+                    android:paddingRight="15dp"
+                    android:text="15:15"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_not_finish_homework" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student11"
+                android:layout_below="@+id/checkIn_student10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img11"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="哪吒"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state11"
+                    android:paddingRight="15dp"
+                    android:text="15:13"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state11"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_not_finish_homework"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/checkIn_student12"
+                android:layout_below="@+id/checkIn_student11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/checkIn_img12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/checkIn_img12"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="太上老君"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/checkIn_student_state12"
+                    android:paddingRight="15dp"
+                    android:text="15:13"/>
+
+                <TextView
+                    android:id="@+id/checkIn_student_state12"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_not_finish_homework"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_below="@+id/checkIn_student12"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/teacherCourse_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/teacher_course_background">
+
+        <ImageView
+            android:id="@+id/courseCover"
+            android:layout_marginLeft="8dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/stu_course_image_background"/>
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_toRightOf="@+id/courseCover"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程名"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/deleteTeacherCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_deleteclass"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/courseNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="15dp"
+            android:text="c0001"
+           android:textStyle="italic"/>
+    </RelativeLayout>

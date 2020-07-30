@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.generalRevision.teacherGeneralRevisionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/teacher_general_revision_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="总复习内容"
+            android:textStyle="bold"
+            android:textColor="#1296db"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/publish_revision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="发布"
+            android:textColor="@color/blue"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:text="反馈"
+            android:alpha="0.0"
+            android:textColor="#FF6A6A"
+            android:textSize="14dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teacher_general_revision_toolbar"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="1.画出下列各信号的波形"
+                    android:textSize="20dp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img1"
+                android:layout_below="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/question4"
+                />
+            <ImageView
+                android:id="@+id/answer1"
+                android:layout_below="@+id/question_img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer4"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/answer1"
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="2.写出图1-3所示各波形的表达式"
+                    android:textSize="20dp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img2"
+                android:layout_below="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/question2"
+                />
+            <ImageView
+                android:id="@+id/answer2"
+                android:layout_below="@+id/question_img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer2"
+                />
+            <RelativeLayout
+                android:layout_below="@+id/answer2"
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="3.判别下列各序列是否为周期性的"
+                    android:textSize="20dp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img3"
+                android:layout_below="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/question3"
+                />
+
+            <ImageView
+                android:id="@+id/answer_img3"
+                android:layout_below="@+id/question_img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer3"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/question4"
+                android:layout_below="@id/answer_img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="4.电路原理图课后作业一"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img4"
+                android:layout_below="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homework1"
+                />
+            <ImageView
+                android:id="@+id/answer4"
+                android:layout_below="@+id/question_img4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer5"
+                />
+            <RelativeLayout
+                android:layout_below="@+id/answer4"
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="5.电路原理图课后作业二"
+                    android:textSize="20dp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/question_img5"
+                android:layout_below="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homework2"
+                />
+            <ImageView
+                android:id="@+id/answer5"
+                android:layout_below="@+id/question_img5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/answer6"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
